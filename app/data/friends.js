@@ -1,0 +1,82 @@
+var vacationSpots = [{
+    "location":"Phuket, Thailand",
+    "photo":"https://allasia.org/wp-content/uploads/2018/10/visit-travel-phuket-thailand.jpg",
+    "scores":[
+        5,
+        1,
+        4,
+        4,
+        5,
+        1,
+        2,
+        5,
+        4,
+        1
+      ]
+  },
+  {
+    "location":"Cape Town, South Africa",
+    "photo":"http://www.travelstart.co.za/blog/wp-content/uploads/2018/05/main-best-time-to-visit-cape-town.jpg",
+    "scores":[
+        5,
+        1,
+        4,
+        4,
+        5,
+        1,
+        2,
+        5,
+        4,
+        1
+      ]
+  },
+  {
+    "location":"New York City, United States",
+    "photo":"https://www.burgessyachts.com/media/adminforms/locations/n/e/new_york_1.jpg",
+    "scores":[
+        5,
+        1,
+        4,
+        4,
+        5,
+        1,
+        2,
+        5,
+        4,
+        1
+      ]
+  },
+  {
+    "location":"Bavarian Alps, Germany",
+    "photo":"https://i0.wp.com/frequentravlr.com/wp-content/uploads/2017/05/AdobeStock_95646716-e1495716130126.jpeg?resize=900%2C648",
+    "scores":[
+        5,
+        1,
+        4,
+        4,
+        5,
+        1,
+        2,
+        5,
+        4,
+        1
+      ]
+  },
+  {
+    "location":"Singapore",
+    "photo":"http://static.asiawebdirect.com/m/phuket/portals/www-singapore-com/homepage/pagePropertiesImage/singapore.jpg.jpg",
+    "scores":[
+        5,
+        1,
+        4,
+        4,
+        5,
+        1,
+        2,
+        5,
+        4,
+        1
+      ]
+  },
+]
+module.exports = vacationSpots;
