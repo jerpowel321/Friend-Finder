@@ -298,22 +298,23 @@
             $("#A10").val()
           ]
         };
-        console.log(userData.scores[0])
+        console.log(userData)
         console.log($("#A1").val())
         // AJAX post the data to the friends API.
         $.post("/api/friends", userData, function (data) {
-          alert("Survey results post method")
-          // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-          $("#location").text(data.location);
-          $("#image").attr("src", data.photo);
-
-          // Show the modal with the best match
-          $("#exampleModal").modal("toggle");
-
+          if (data) {
+            alert("Survey results post method")
+            // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+            $("#location").text(data.location);
+            $("#image").attr("src", data.photo);
+            // Show the modal with the best match
+            $("#exampleModal").modal("toggle");
+          }
+          else {
+            alert("Please fill out all fields before submitting!");
+          }
         });
-      } else {
-        alert("Please fill out all fields before submitting!");
-      }
+      };
     });
   </script>
 
