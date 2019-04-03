@@ -1,45 +1,59 @@
 // ===============================================================================
 // LOAD DATA
-// We are linking our routes to a series of "data" sources.
-// These data sources hold arrays of information on table-data, waitinglist, etc.
+// Linking routes to a series of "data" sources.
+// These data sources hold arrays of information on vacation destinations
 // ===============================================================================
 
 var locationData = require("../data/friends");
-
 
 // ===============================================================================
 // ROUTING
 // ===============================================================================
 
-module.exports = function(app) {
+module.exports = function (app) {
   // API GET Requests
   // Below code handles when users "visit" a page.
   // In each of the below cases when a user visits a link
   // (ex: localhost:PORT/api/admin... they are shown a JSON of the data in the table)
   // ---------------------------------------------------------------------------
 
-  app.get("/api/friends", function(req, res) {
+  app.get("/api/friends", function (req, res) {
     res.json(locationData);
   });
-
-  
 
   // API POST Requests
   // Below code handles when a user submits a form and thus submits data to the server.
   // In each of the below cases, when a user submits form data (a JSON object)
   // ...the JSON is pushed to the appropriate JavaScript array
-  // (ex. User fills out a reservation request... this data is then sent to the server...
-  // Then the server saves the data to the tableData array)
-  // ---------------------------------------------------------------------------
 
-  // ---------------------------------------------------------------------------
-  // I added this below code so you could clear out the table while working with the functionality.
-  // Don"t worry about it!
+app.post("/api/friends", function (req, res) {
+  var bestMatch = {
+    location: "",
+    photo: "",
+    locationDifference: 1000
+  }
+  var userInput = req.body;
+  var userScores = userInput.scores;
+  var totalDifference;
+  alert("HELLO");
+  console.log("TT"+ userInput); 
 
-  app.post("/api/clear", function(req, res) {
-    // Empty out the arrays of data
-    locationData = [];
-    res.json({ ok: true });
- 
-  });
+  for (var i = 0; i < locationData.length; i++) {
+    var currentLocation = locationData[i]
+    totalDifference = 0
+    console.log(currentLocation.location)
+    for (var j = 0; j < currentLocation.scores.length; j++) {
+      var currentLocationScore = currentLocation.scores[j]
+      var currentUserScore = userScores[j]
+      totalDifference += Math.abs(parseInt(currentLocationScore) - parseInt(currentUserScore))
+    }
+    if (totalDifference <= bestMatch.locationDifference) {
+      bestMatch.location = currentLocation.location
+      bestMatch.photo = currentLocation.photo
+      bestMatch.locationDifference = totalDifference
+    }
+  }
+  res.json(bestMatch)
+  
+});
 };

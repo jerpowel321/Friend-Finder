@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Vacation Finder</title>
+
+
+  <!-- JQuery Link-->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Bootstrap Link-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Font Awesome Link-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <style>
+    .form-control {
+      width: 20%;
+      margin: 20px 0 20px 100px;
+    }
+
+    .textfont {
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    .jumbotron {
+      background-image: url("http://fullhdwall.com/wp-content/uploads/2018/02/Best-Tropical-Beach.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border: 3px ridge black;
+    }
+
+    .shadow {
+      text-shadow: 4px 2px black;
+    }
+
+    .smallShadow {
+      text-shadow: 2px 2px black;
+    }
+  </style>
+  <!-- Google Fonts Link-->
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+</head>
+
+<body>
+
+
+  <div class="container">
+    <div class="jumbotron bg-primary">
+      <h1 class="text-center shadow text-white"><span class="fas fa-plane"></span> Start Survey!</h1>
+      <hr>
+      <h2 class="text-center shadow text-white">Answer the 10 questions listed below by ranking each statement 1-5 on
+        how strongly you
+        agree with each statement. </h2>
+
+      <p class="text-center smallShadow text-white">1 = Strongly Disagree | 2 = Disagree | 3 = Neutral | 4 = Agree | 5 =
+        Strongly Agree</p>
+    </div>
+  </div>
+  <div class="container" style="width: 75%">
+    <form>
+      <div class="form-group">
+        <label class="h2 textfont" for="A1">1. I enjoy traveling to exotic places.</label>
+        <select class="form-control" id="A1">
+          <option class="textfont" value='1'>1</option>
+          <option class="textfont" value='2'>2</option>
+          <option class="textfont" value='3'>3</option>
+          <option class="textfont" value='4'>4</option>
+          <option class="textfont" value='5'>5</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="h2 textfont" for="A2">2. I love going to the beach.</label>
+        <select class="form-control" id="A2">
+          <option class="textfont" value='1'>1</option>
+          <option class="textfont" value='2'>2</option>
+          <option class="textfont" value='3'>3</option>
+          <option class="textfont" value='4'>4</option>
+          <option class="textfont" value='5'>5</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="h2 textfont" for="A3">3. I dislike cold weather.</label>
+        <select class="form-control" id="A3">
+          <option class="textfont" value='1'>1</option>
+          <option class="textfont" value='2'>2</option>
+          <option class="textfont" value='3'>3</option>
+          <option class="textfont" value='4'>4</option>
+          <option class="textfont" value='5'>5</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="h2 textfont" for="A4">4. I enjoy locations with lots of history</label>
+        <select class="form-control" id="A4">
+          <option class="textfont" value='1'>1</option>
+          <option class="textfont" value='2'>2</option>
+          <option class="textfont" value='3'>3</option>
+          <option class="textfont" value='4'>4</option>
+          <option class="textfont" value='5'>5</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="h2 textfont" for="A5">5. I am looking for kid friendly destinations.</label>
+        <select class="form-control" id="A5">
+          <option class="textfont" value='1'>1</option>
+          <option class="textfont" value='2'>2</option>
+          <option class="textfont" value='3'>3</option>
+          <option class="textfont" value='4'>4</option>
+          <option class="textfont" value='5'>5</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="h2 textfont" for="A6">6. I enjoy hiking.</label>
+        <select class="form-control" id="A6">
+          <option class="textfont" value='1'>1</option>
+          <option class="textfont" value='2'>2</option>
+          <option class="textfont" value='3'>3</option>
+          <option class="textfont" value='4'>4</option>
+          <option class="textfont" value='5'>5</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="h2 textfont" for="A7">7. I enjoy taking public transit.</label>
+        <select class="form-control" id="A7">
+          <option class="textfont" value='1'>1</option>
+          <option class="textfont" value='2'>2</option>
+          <option class="textfont" value='3'>3</option>
+          <option class="textfont" value='4'>4</option>
+          <option class="textfont" value='5'>5</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="h2 textfont" for="A8">8. I want to try new street food.</label>
+        <select class="form-control" id="A8">
+          <option class="textfont" value='1'>1</option>
+          <option class="textfont" value='2'>2</option>
+          <option class="textfont" value='3'>3</option>
+          <option class="textfont" value='4'>4</option>
+          <option class="textfont" value='5'>5</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="h2 textfont" for="A9">9. I want a budget friendly destination.</label>
+        <select class="form-control" id="A9">
+          <option class="textfont" value='1'>1</option>
+          <option class="textfont" value='2'>2</option>
+          <option class="textfont" value='3'>3</option>
+          <option class="textfont" value='4'>4</option>
+          <option class="textfont" value='5'>5</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="h2 textfont" for="A10">10. I want my desitantion to be a romantic place.</label>
+        <select class="form-control" id="A10">
+          <option class="textfont" value='1'>1</option>
+          <option class="textfont" value='2'>2</option>
+          <option class="textfont" value='3'>3</option>
+          <option class="textfont" value='4'>4</option>
+          <option class="textfont" value='5'>5</option>
+        </select>
+      </div>
+    </form>
+  </div>
+
+  <!-- Button trigger modal -->
+  <div class="container">
+    <button id="submitSurvey" type="button" class="btn btn-primary text-center" data-toggle="modal"
+      data-target="#exampleModal">
+      Submit Survey
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Catchy title here</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h2 id="location"></h2>
+            <img id="image">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p><a href="/api/friends">API Location List</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    var questions = [{
+      id: 1,
+      Q: "I enjoy traveling to exotic places.",
+      A: [1, 2, 3, 4, 5]
+      // image: 
+    }, {
+      id: 2,
+      Q: "I love going to the beach.",
+      A: [1, 2, 3, 4, 5]
+      // image: 
+    },
+    {
+      id: 3,
+      Q: "I dislike cold weather.",
+      A: [1, 2, 3, 4, 5]
+      // image: 
+    },
+    {
+      id: 4,
+      Q: "I enjoy locations with lots of history.",
+      A: [1, 2, 3, 4, 5]
+      // image: 
+    },
+    {
+      id: 5,
+      Q: "I am looking for kid friendly destinations.",
+      A: [1, 2, 3, 4, 5]
+      // image: 
+    },
+    {
+      id: 6,
+      Q: "I you enjoy hiking.",
+      A: [1, 2, 3, 4, 5]
+      // image: 
+    },
+    {
+      id: 7,
+      Q: "I enjoy taking public transit.",
+      A: [1, 2, 3, 4, 5]
+      // image: 
+    },
+    {
+      id: 8,
+      Q: "I want to try new street food.",
+      A: [1, 2, 3, 4, 5]
+      // image: 
+    },
+    {
+      id: 9,
+      Q: "I want a budget friendly destination.",
+      A: [1, 2, 3, 4, 5]
+      // image: 
+    },
+    {
+      id: 10,
+      Q: "I want my desitantion to be a romantic place.",
+      A: [1, 2, 3, 4, 5]
+      // image: 
+    }]
+    var card = $("#quiz")
+
+    $("#submitSurvey").on("click", function (event) {
+      event.preventDefault();
+      // Form validation
+      function validateForm() {
+        var isValid = true;
+        $(".form-control").each(function () {
+          if ($(this).val() === "") {
+            isValid = false;
+          }
+        });
+        return isValid;
+      }
+      // If all required fields are filled
+      if (validateForm()) {
+        // Create an object for the user"s data
+        var userData = {
+          scores: [
+            $("#A1").val(),
+            $("#A2").val(),
+            $("#A3").val(),
+            $("#A4").val(),
+            $("#A5").val(),
+            $("#A6").val(),
+            $("#A7").val(),
+            $("#A8").val(),
+            $("#A9").val(),
+            $("#A10").val()
+          ]
+        };
+        console.log(userData.scores[0])
+        console.log($("#A1").val())
+        // AJAX post the data to the friends API.
+        $.post("/api/friends", userData, function (data) {
+          alert("Survey results post method")
+          // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+          $("#location").text(data.location);
+          $("#image").attr("src", data.photo);
+
+          // Show the modal with the best match
+          $("#exampleModal").modal("toggle");
+
+        });
+      } else {
+        alert("Please fill out all fields before submitting!");
+      }
+    });
+  </script>
+
+</body>
+
+</html>
