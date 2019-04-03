@@ -94,6 +94,5 @@ var vacationSpots = [{
     5
   ]
 }
-
 ]
 module.exports = vacationSpots;
