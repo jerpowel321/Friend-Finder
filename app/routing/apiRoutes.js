@@ -35,13 +35,12 @@ app.post("/api/friends", function (req, res) {
   var userInput = req.body;
   var userScores = userInput.scores;
   var totalDifference;
-  alert("HELLO");
-  console.log("TT"+ userInput); 
+
 
   for (var i = 0; i < locationData.length; i++) {
     var currentLocation = locationData[i]
     totalDifference = 0
-    console.log(currentLocation.location)
+    // console.log(currentLocation.location)
     for (var j = 0; j < currentLocation.scores.length; j++) {
       var currentLocationScore = currentLocation.scores[j]
       var currentUserScore = userScores[j]

@@ -93,6 +93,22 @@ var vacationSpots = [{
     1,
     5
   ]
+},
+{
+  "location": "DisneyWorld, Orlando Florida",
+  "photo": "https://www.tripsavvy.com/thmb/lbyj7SuUcnHN8JsDneoTEdjb_9A=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/DisneyWorld_MickeyGang_Castle-567e85275f9b586a9eb6b098.jpg",
+  "scores": [
+    3,
+    4,
+    5,
+    1,
+    5,
+    2,
+    3,
+    1,
+    1,
+    2
+  ]
 }
 ]
 module.exports = vacationSpots;
