@@ -37,7 +37,7 @@ var vacationSpots = [{
     1,
     1,
     1,
-    3,
+    4,
     3,
     1,
     5,
@@ -109,6 +109,54 @@ var vacationSpots = [{
     1,
     2
   ]
-}
-]
+},
+{
+  "location": "Havana, Cuba",
+  "photo": "https://i0.wp.com/www.theclumsytraveler.com/wp-content/uploads/2018/09/unnamed.jpg?resize=760%2C434",
+  "scores": [
+    5,
+    5,
+    5,
+    2,
+    3,
+    3,
+    2,
+    1,
+    3,
+    4
+  ]
+},
+{
+  "location": "Alaska, United States",
+  "photo": "https://i2.wp.com/honeymoonalways.com/wp-content/uploads/2018/01/Clouds-Sky-Denali-National-Park-Alaska-Mountains-1733313.jpg?fit=750%2C500&ssl=1",
+  "scores": [
+    2,
+    3,
+    1,
+    3,
+    5,
+    2,
+    3,
+    1,
+    3,
+    4
+  ]
+},
+{
+  "location": "Tokyo, Japan",
+  "photo": "https://blog.goway.com/globetrotting/wp-content/uploads/2018/03/Two-geishas-at-Sensoji-Temple-in-Asakusa-Tokyo-Japan_667925704.jpg",
+  "scores": [
+    3,
+    3,
+    2,
+    4,
+    3,
+    3,
+    4,
+    4,
+    1,
+    2
+  ]
+}]
+
 module.exports = vacationSpots;

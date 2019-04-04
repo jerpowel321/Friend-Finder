@@ -37,14 +37,14 @@
     .shadow {
       box-shadow: 7px 7px black;
     }
-    .textshadow{
+
+    .textshadow {
       text-shadow: 3px 3px 1px rgb(21, 21, 100);
     }
 
     #submitSurvey {
       margin: 20px 20px;
     }
- 
   </style>
   <!-- Google Fonts Link-->
   <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
@@ -57,9 +57,9 @@
     <h1 class="text-center text-white textshadow"><span class="fas fa-plane"></span> Start Survey!</h1>
   </div>
 
-  
- 
-  
+
+
+
   <div class="container" style="width: 75%">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
@@ -75,12 +75,14 @@
         <div class="item active">
           <div class="trim"><img
               src="https://d1bv4heaa2n05k.cloudfront.net/user-images/1478007595140/venice-main-ready_main_1478007617990.jpeg"
-              alt="Venice Italy"></div>
+              alt="Venice Italy" style="width:100%; height: 575px"></div>
           <div class="carousel-caption">
-            <h3>Venice, Italy</h3>
-            <p>Visit one of the most romantic cities in the world! Be sure to visit St. Mark’s Square located in the
-              heart of Venice. From here you can easily visit most of the other main sites. Sit back, have some gelato
-              and enjoy people watching.</p>
+            <div class="bg-primary" style="border: 2px solid black">
+              <h3>Venice, Italy</h3>
+              <p>Visit one of the most romantic cities in the world! Be sure to visit St. Mark’s Square located in the
+                heart of Venice. From here you can easily visit most of the other main sites. Sit back, have some gelato
+                and enjoy people watching.</p>
+            </div>
           </div>
         </div>
 
@@ -88,9 +90,11 @@
           <img src="https://img.jakpost.net/c/2017/02/10/2017_02_10_21340_1486708892._large.jpg" alt="Paris, France"
             style="width:100%; height: 575px">
           <div class="carousel-caption">
-            <h3>Paris, France</h3>
-            <p>Paris is known as global center for art, fashion, gastronomy and culture. Be sure to visit the Eifel
-              Tower on your next visit!</p>
+            <div class="bg-primary" style="border: 2px solid black">
+              <h3>Paris, France</h3>
+              <p>Paris is known as global center for art, fashion, gastronomy and culture. Be sure to visit the Eifel
+                Tower on your next visit!</p>
+            </div>
           </div>
         </div>
 
@@ -98,8 +102,10 @@
           <img src="https://www.ciee.org/sites/default/files/content/program/main-image/rome-open-campus-hero.jpg"
             alt="Rome Italy" style="width:100%; height: 575px">
           <div class="carousel-caption">
-            <h3>Rome, Italy</h3>
-            <p>Make a wish at the trevi fountain and take a historical visit to the coliseum.</p>
+            <div class="bg-primary" style="border: 2px solid black">
+              <h3>Rome, Italy</h3>
+              <p>Make a wish at the trevi fountain and take a historical visit to the coliseum.</p>
+            </div>
           </div>
         </div>
 
@@ -119,125 +125,118 @@
 
 
   <div class="container">
-    <h1 class="text-center text-primary textfont">Rate the 10 statements below on a scale of 1-5 based on how strongly you agree with each statement.</h1>
+    <h1 class="text-center text-primary textfont">Answer the 10 questions below and find your next Vacation Destination!</h1>
 
-    <h3 class="text-center mb-5 text-primary textfont">1 = Strongly Disagree | 2 = Disagree | 3 = Neutral | 4 = Agree | 5 =
-      Strongly Agree</h3>
   </div>
+  <hr>
   <div class="container mt-5" style="width: 75%">
     <div class="shadow text-primary">
       <form>
         <div class="form-group text-primary">
-          <label class="h2 textfont ml-5 pt-5" for="A1">1. Do you traveling to exotic places?</label>
+          <label class="h2 textfont ml-5 pt-5" for="A1"><b>Question 1 |</b>
+            Do you enjoy traveling to exotic places?</label>
           <select class="form-control" id="A1">
-            <option class="textfont" value='1'>1</option>
-            <option class="textfont" value='2'>2</option>
-            <option class="textfont" value='3'>3</option>
-            <option class="textfont" value='4'>4</option>
-            <option class="textfont" value='5'>5</option>
+            <option class="textfont" value='1'>Never</option>
+            <option class="textfont" value='2'>Rarely</option>
+            <option class="textfont" value='3'>Neutral</option>
+            <option class="textfont" value='4'>Definitely</option>
+            <option class="textfont" value='5'>Love it!</option>
           </select>
         </div>
         <div class="form-group">
-          <label class="h2 textfont ml-5" for="A2">2. I love going to the beach.</label>
+          <label class="h2 textfont ml-5" for="A2"> <b>Question 2 |</b> How do you feel about beaches?</label>
           <select class="form-control" id="A2">
-            <option class="textfont" value='1'>1</option>
-            <option class="textfont" value='2'>2</option>
-            <option class="textfont" value='3'>3</option>
-            <option class="textfont" value='4'>4</option>
-            <option class="textfont" value='5'>5</option>
+            <option class="textfont" value='1'>Dislike them, too hot!</option>
+            <option class="textfont" value='2'>I'll go if someone drives.</option>
+            <option class="textfont" value='3'>They're okay, not my favorite.</option>
+            <option class="textfont" value='4'>I could be there all day.</option>
+            <option class="textfont" value='5'>Certified Beach Bum.</option>
           </select>
         </div>
         <div class="form-group">
-          <label class="h2 textfont ml-5" for="A3">3. I dislike cold weather.</label>
+          <label class="h2 textfont ml-5" for="A3"><b>Question 3 |</b> Do you like cold weather?</label>
           <select class="form-control" id="A3">
-            <option class="textfont" value='1'>1</option>
-            <option class="textfont" value='2'>2</option>
-            <option class="textfont" value='3'>3</option>
-            <option class="textfont" value='4'>4</option>
-            <option class="textfont" value='5'>5</option>
+            <option class="textfont" value='1'>Yes! Bring on the snow!</option>
+            <option class="textfont" value='2'>Yes! Let me get my mittens.</option>
+            <option class="textfont" value='3'>Don't have a preference.</option>
+            <option class="textfont" value='4'>Could live without it.</option>
+            <option class="textfont" value='5'>No, I prefer the heat.</option>
           </select>
         </div>
         <div class="form-group">
-          <label class="h2 textfont ml-5" for="A4">4. I enjoy locations with lots of history</label>
+          <label class="h2 textfont ml-5" for="A4"><b>Question 4 |</b> When visiting a city for the first time, do you enjoy
+            visiting museems?</label>
           <select class="form-control" id="A4">
-            <option class="textfont" value='1'>1</option>
-            <option class="textfont" value='2'>2</option>
-            <option class="textfont" value='3'>3</option>
-            <option class="textfont" value='4'>4</option>
-            <option class="textfont" value='5'>5</option>
+            <option class="textfont" value='1'>I'll pass.</option>
+            <option class="textfont" value='2'>I rarely go to museems.</option>
+            <option class="textfont" value='3'>It's a toss up.</option>
+            <option class="textfont" value='4'>I try to go to as many as time allows.</option>
+            <option class="textfont" value='5'>It's the main item on my to do list!</option>
           </select>
         </div>
         <div class="form-group">
-          <label class="h2 textfont ml-5" for="A5">5. I am looking for kid friendly destinations.</label>
+          <label class="h2 textfont ml-5" for="A5"><b>Question 5 |</b> Are you looking for a kid friendly destination?</label>
           <select class="form-control" id="A5">
-            <option class="textfont" value='1'>1</option>
-            <option class="textfont" value='2'>2</option>
-            <option class="textfont" value='3'>3</option>
-            <option class="textfont" value='4'>4</option>
-            <option class="textfont" value='5'>5</option>
+            <option class="textfont" value='1'>Nope.</option>
+            <option class="textfont" value='2'>No preferences.</option>
+            <option class="textfont" value='3'>It would be nice.</option>
+            <option class="textfont" value='4'>Yes, it's important to me.</option>
+            <option class="textfont" value='5'>Absolutely!</option>
           </select>
         </div>
         <div class="form-group">
-          <label class="h2 textfont ml-5" for="A6">6. I enjoy hiking.</label>
+          <label class="h2 textfont ml-5" for="A6"><b>Question 6 |</b> Do you enjoy hiking?</label>
           <select class="form-control" id="A6">
-            <option class="textfont" value='1'>1</option>
-            <option class="textfont" value='2'>2</option>
-            <option class="textfont" value='3'>3</option>
-            <option class="textfont" value='4'>4</option>
-            <option class="textfont" value='5'>5</option>
+            <option class="textfont" value='1'>No way, I'm a home body.</option>
+            <option class="textfont" value='2'>Why do people hike?</option>
+            <option class="textfont" value='3'>Not my favorite.</option>
+            <option class="textfont" value='4'>Yes, it's a great form of exercise.</option>
+            <option class="textfont" value='5'>I hike every chance I get!</option>
           </select>
         </div>
         <div class="form-group">
-          <label class="h2 textfont ml-5" for="A7">7. I enjoy taking public transit.</label>
+          <label class="h2 textfont ml-5" for="A7"><b>Question 7 |</b> How comfortable are you with taking public transit.</label>
           <select class="form-control" id="A7">
-            <option class="textfont" value='1'>1</option>
-            <option class="textfont" value='2'>2</option>
-            <option class="textfont" value='3'>3</option>
-            <option class="textfont" value='4'>4</option>
-            <option class="textfont" value='5'>5</option>
+            <option class="textfont" value='1'>Isn't there Uber?</option>
+            <option class="textfont" value='2'>I'd rather walk.</option>
+            <option class="textfont" value='3'>I don't like it but I can manage.</option>
+            <option class="textfont" value='4'>Save the earth, I try to use public transit as much as possible.</option>
+            <option class="textfont" value='5'>Very comfortable, I ride the subway all the time.</option>
           </select>
         </div>
         <div class="form-group">
-          <label class="h2 textfont ml-5" for="A8">8. I want to try new street food.</label>
+          <label class="h2 textfont ml-5" for="A8"><b>Question 8 |</b> Are you interested in trying street food?</label>
           <select class="form-control" id="A8">
-            <option class="textfont" value='1'>1</option>
-            <option class="textfont" value='2'>2</option>
-            <option class="textfont" value='3'>3</option>
-            <option class="textfont" value='4'>4</option>
-            <option class="textfont" value='5'>5</option>
+            <option class="textfont" value='1'>No, not going to risk it.</option>
+            <option class="textfont" value='2'>I'm leaning towards no.</option>
+            <option class="textfont" value='3'>Maybe... depends what it is.</option>
+            <option class="textfont" value='4'>Yes, I've always wanted to.</option>
+            <option class="textfont" value='5'>I'll eat anything anywhere don't you worry.</option>
           </select>
         </div>
         <div class="form-group">
-          <label class="h2 textfont ml-5" for="A9">9. I want a budget friendly destination.</label>
+          <label class="h2 textfont ml-5" for="A9"><b>Question 9 |</b> Are you looking for a budget friendly destination?</label>
           <select class="form-control" id="A9">
-            <option class="textfont" value='1'>1</option>
-            <option class="textfont" value='2'>2</option>
-            <option class="textfont" value='3'>3</option>
-            <option class="textfont" value='4'>4</option>
-            <option class="textfont" value='5'>5</option>
+            <option class="textfont" value='1'>Nope, I'm going all out.</option>
+            <option class="textfont" value='2'>Nope, I never stick to budgets anyways.</option>
+            <option class="textfont" value='3'>It would be nice, but not too important.</option>
+            <option class="textfont" value='4'>Yes, it's important to get the most bang for your buck.</option>
+            <option class="textfont" value='5'>YES. I'm B R O K E.</option>
           </select>
         </div>
         <div class="form-group pb-5">
-          <label class="h2 textfont ml-5" for="A10">10. I want my desitantion to be a romantic place.</label>
+          <label class="h2 textfont ml-5" for="A10"><b>Question 10 |</b> Are you a romantic?</label>
           <select class="form-control" id="A10">
-            <option class="textfont" value='1'>1</option>
-            <option class="textfont" value='2'>2</option>
-            <option class="textfont" value='3'>3</option>
-            <option class="textfont" value='4'>4</option>
-            <option class="textfont" value='5'>5</option>
+            <option class="textfont" value='1'>No, just no.</option>
+            <option class="textfont" value='2'>It's not that I hate romantic things.</option>
+            <option class="textfont" value='3'>Not particularly.</option>
+            <option class="textfont" value='4'>Yes, it's important.</option>
+            <option class="textfont" value='5'>Very. I'm ready, make it cliché.</option>
           </select>
         </div>
       </form>
     </div>
   </div>
-
-
-
-
-
-
-
-
 
   <!-- Button trigger modal -->
   <div class="container text-center">
@@ -275,7 +274,6 @@
 
   <!-- JQuery Link-->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
 
   <script>
 
@@ -326,6 +324,8 @@
         });
       };
     });
+
+    // set the interval for the next slide to display on the carousel
     $('.carousel').carousel({
       interval: 2000
     })
